@@ -21,8 +21,9 @@ export const productContext = React.createContext();
 
 function App() {
   const [productList, setProductList] = useState(JSONDATA)
+  const [cart, setCart] = useState([])
   return (
-    <productContext.Provider value={[productList,setProductList]}>
+    <productContext.Provider value={[productList,setProductList,cart,setCart]}>
       <div class="min-w-screen min-h-screen max-h-screen bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 flex flex-col overflow-hidden ">
         <Router>
          <Nav/>
