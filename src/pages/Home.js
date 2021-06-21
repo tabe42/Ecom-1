@@ -51,7 +51,7 @@ export default function Home() {
                 else if(product.title.toLowerCase().includes(searchItem.toLowerCase())){
                     return product}
                     }).map((product,key) =>(
-                    <div key={key} className="p-1 pt-4 bg-white rounded-lg flex flex-col justify-center items-center m-2 overflow-hidden"><Img className="h-24 w-24" src={product.image} alt="sdfds"></Img>
+                    <div style={{width: '40vw'}} key={key} className="p-1 pt-4 bg-white rounded-lg flex flex-col justify-center items-center m-2 overflow-hidden"><Img className="h-24 w-24" src={product.image} alt="sdfds"></Img>
                         <div className="h-6 w-24 text-sm mt-2 text-center font-semibold">
                             ${product.price}
                         </div>
